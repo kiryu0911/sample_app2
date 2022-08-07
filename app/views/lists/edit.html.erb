@@ -2,10 +2,10 @@
 <%= form_with model: @list do |f| %>
 
 <h4>タイトル</h4>
-<%= text_find :tetle %>
+<%= f.text_field :title %>
 
 <h4>本文</h4>
-<%= text_area :body %>
+<%= f.text_area :body %>
 
 <%= f.submit '保存' %>
 
